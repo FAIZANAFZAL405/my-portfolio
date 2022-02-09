@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:ital,wght@0,400;1,300;1,700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="HideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skill.html">SKILLS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="ShowMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- conatct us -->
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d16103.931333171404!2d115.86598592686315!3d-31.94910631199193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2a32bad71519d0af%3A0xb9ba05551f42d281!2s30%20Beaufort%20St%2C%20Perth%20WA%206000!3m2!1d-31.9511328!2d115.86234259999999!5e0!3m2!1sen!2sau!4v1640368445647!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Perth, WA, Australia</h5>
+                            
+                        </span>
+                    </div>
+                
+                    <div>
+                    <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+61 405 491 186</h5>
+                            <p>Monday to Fridat, 9AM to 5PM</p>
+                        </span>
+                    </div>
+
+                
+            <div>
+            <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>faizanafzal405@gmail.com</h5>
+                    <p>Email me your query</p>
+                </span>
+            </div>
+
+        </div>
+                <div class="contact-col">
+                    <form action="form.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            
+        </section>
+
+
+
+            <!--footer -->
+            
+        
+        <section class="footer">
+            <h4>About Me</h4>
+            <p>Faizan is an extremely driven and highly skilled graduate developer & cyber security analyst, with extensive experience in software development, IT support & Security. <br>Proven leadership, communication, and analytical skills. Decisive, solutions-focused, and results-oriented with an emphasis on maximizing operating efficiencies</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100004836916071" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://github.com/FAIZANAFZAL405" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/mfafzal1/" target="_blank" class="fa fa-linkedIn"></a>
+                
+            </div>
+                <p>Made With <i class="fa fa-heart-o"></i> by Muhammad Faizan Afzal</p>
+        </section>
+        <!-- javascript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function ShowMenu(){
+                navLinks.style.right ="0";
+            }
+            function HideMenu(){
+                navLinks.style.right ="-200";
+            }
+        </script>
+
+    </body>
+</html>

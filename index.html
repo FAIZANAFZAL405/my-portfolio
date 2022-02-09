@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:ital,wght@0,400;1,300;1,700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="HideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skill.html">SKILLS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="ShowMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Hi I,m Faizan Afzal!</h1>
+                <p>Cyber Security Engineer — Front End Engineer<br> </p>
+                <a onclick="href='cv.pdf';" target="_blank" class="hero-btn">Download CV</a>
+            </div>
+            
+        </section>
+        
+
+        
+
+        <!-- footer -->
+        <section class="footer">
+            <h4>About Me</h4>
+            <p>Faizan is an extremely driven and highly skilled graduate developer & cyber security analyst, with extensive experience in software development, IT support & Security. <br>Proven leadership, communication, and analytical skills. Decisive, solutions-focused, and results-oriented with an emphasis on maximizing operating efficiencies</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100004836916071" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://github.com/FAIZANAFZAL405" target="_blank" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/mfafzal1/" target="_blank" class="fa fa-linkedIn"></a>
+                    
+                </div>
+                <p>Made With <i class="fa fa-heart-o"></i> by Muhammad Faizan Afzal</p>
+        </section>
+        <!-- javascript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function ShowMenu(){
+                navLinks.style.right ="0";
+            }
+            function HideMenu(){
+                navLinks.style.right ="-200";
+            }
+        </script>
+
+    </body>
+</html>

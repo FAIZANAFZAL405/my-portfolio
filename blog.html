@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:ital,wght@0,400;1,300;1,700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="HideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skill.html">SKILLS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="ShowMenu()"></i>
+            </nav>
+            <h1>Projects</h1>
+        </section>
+
+        <!-- courses --> 
+
+        <section class="projects">
+            <h1>Projects I Have Done</h1>
+            <p>I have worked on a wide 
+                variety of projects</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Web Development</h3>
+                    <p>I have worked on 3+ website projects, both single and multiple page using (HTML, CSS & JavaScript)</p>
+                </div>
+                <div class="course-col">
+                    <h3>Cyber Security</h3>
+                    <p>I have done different type of project in cyber security e.g (penetration testing, digital forensic & network security )</p>
+                </div>
+                <div class="course-col">
+                    <h3>Machine Learning</h3>
+                    <p>Final year project <br> Assessment of automatic human recognition algorithms under COVID-19 rescrictions</p>
+                </div>
+
+            </div>
+        </section>
+      
+
+        <!-- facilities -->
+
+        <!-- <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>we provide best facilities for our students.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/class.jpg">
+                    <h3>Best Classes for Practice</h3>
+                    <p>hesfbvher hwevfbwhe. erb regherebb
+                        hevfwehjewhfvwehbvfwehvf
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafe.png">
+                    <h3>Cafe to release your stress</h3>
+                    <p>hesfbvher hwevfbwhe. erb regherebb
+                        hevfwehjewhfvwehbvfwehvf
+                    </p>
+                </div>
+            </div>
+        </section> -->
+
+
+            
+        <!-- footer -->
+        <section class="footer">
+            <h4>About Me</h4>
+            <p>Faizan is an extremely driven and highly skilled graduate developer & cyber security analyst, with extensive experience in software development, IT support & Security. <br>Proven leadership, communication, and analytical skills. Decisive, solutions-focused, and results-oriented with an emphasis on maximizing operating efficiencies</p>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100004836916071" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://github.com/FAIZANAFZAL405" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/mfafzal1/" target="_blank" class="fa fa-linkedIn"></a>
+                
+            </div>
+                <p>Made With <i class="fa fa-heart-o"></i> by Muhammad Faizan Afzal</p>
+        </section>
+        <!-- javascript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function ShowMenu(){
+                navLinks.style.right ="0";
+            }
+            function HideMenu(){
+                navLinks.style.right ="-200";
+            }
+        </script>
+
+    </body>
+</html>
